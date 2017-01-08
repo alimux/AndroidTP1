@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">M2 TP1</string>
+    <string name="Entier1">Entier 1...</string>
+    <string name="Entier2">Entier 2...</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="multiply">*</string>
+    <string name="divided">/</string>
+    <string name="result">Résultat : </string>
+    <string name="displayResult">0</string>
+</resources>

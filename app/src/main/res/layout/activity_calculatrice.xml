@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculatrice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.ducreux.alex.m2tp1.Calculatrice">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/nombreA"
+        android:layout_alignStart="@+id/nombreA"
+        android:layout_marginTop="27dp"
+        android:id="@+id/nombreB"
+        android:text="@string/Entier2"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="@string/add"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        style="@android:style/Widget.Button"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/nombreB"
+        android:layout_alignStart="@+id/nombreB"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:text="@string/subtract"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/subtractButton"
+        style="@android:style/Widget.Button"
+        android:layout_alignBaseline="@+id/addButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_toEndOf="@+id/addButton"
+        android:layout_marginStart="20dp"
+        android:elevation="11dp" />
+
+    <Button
+        android:text="@string/multiply"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/multiplyButton"
+        style="@android:style/Widget.Button"
+        android:elevation="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignBaseline="@+id/subtractButton"
+        android:layout_alignBottom="@+id/subtractButton"
+        android:layout_toEndOf="@+id/subtractButton" />
+
+    <Button
+        android:text="@string/divided"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dividedButton"
+        style="@android:style/Widget.Button"
+        android:layout_marginStart="20dp"
+        android:layout_alignBaseline="@+id/multiplyButton"
+        android:layout_alignBottom="@+id/multiplyButton"
+        android:layout_toEndOf="@+id/multiplyButton" />
+
+    <TextView
+        android:text="@string/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addButton"
+        android:layout_alignStart="@+id/nombreB"
+        android:layout_marginTop="32dp"
+        android:id="@+id/resultText"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:ems="10"
+        android:id="@+id/nombreA"
+        android:text="@string/Entier1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/displayResult"
+        android:id="@+id/displayResult"
+        android:layout_width="100dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/resultText"
+        android:layout_alignEnd="@+id/dividedButton" />
+</RelativeLayout>
