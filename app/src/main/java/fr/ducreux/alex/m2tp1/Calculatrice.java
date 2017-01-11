@@ -9,24 +9,38 @@ import android.widget.TextView;
 public class Calculatrice extends AppCompatActivity {
 
 
-
+private EditText nombreA, nombreB;
+    private TextView displayResultat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculatrice);
-    }
+        nombreA = (EditText) findViewById(R.id.nombreA);
+        nombreB =(EditText) findViewById(R.id.nombreB);
+        displayResultat = (TextView) findViewById(R.id.displayResult);
 
-    public void ajouter(View view) {
-        EditText nombreA = (EditText) findViewById(R.id.nombreA);
+
+    }
+    public void calculate(char op){
         int a =  Integer.valueOf(nombreA.getText().toString());
-        System.out.println("nom a : "+a);
-        EditText nombreB =(EditText) findViewById(R.id.nombreB);
         int b = Integer.valueOf(nombreB.getText().toString());
-        TextView displayResultat = (TextView) findViewById(R.id.displayResult);
-        char op = '+';
         int result = operation(a, b, op);
         displayResultat.setText(Integer.toString(result));
+
+    }
+
+    public void add(View view) {
+        calculate('+');
+    }
+    public void subtract(View view){
+        calculate('-');
+    }
+    public void multiply(View view){
+        calculate('*');
+    }
+    public void divided(View view){
+        calculate('/');
     }
 
 

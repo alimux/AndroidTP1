@@ -32,7 +32,7 @@
         android:layout_below="@+id/nombreB"
         android:layout_alignStart="@+id/nombreB"
         android:layout_marginStart="20dp"
-        android:onClick="ajouter"/>
+        android:onClick="add"/>
 
     <Button
         android:text="@string/subtract"
@@ -44,7 +44,8 @@
         android:layout_alignBottom="@+id/addButton"
         android:layout_toEndOf="@+id/addButton"
         android:layout_marginStart="20dp"
-        android:elevation="11dp" />
+        android:elevation="11dp"
+        android:onClick="subtract"/>
 
     <Button
         android:text="@string/multiply"
@@ -56,7 +57,8 @@
         android:layout_marginStart="20dp"
         android:layout_alignBaseline="@+id/subtractButton"
         android:layout_alignBottom="@+id/subtractButton"
-        android:layout_toEndOf="@+id/subtractButton" />
+        android:layout_toEndOf="@+id/subtractButton"
+        android:onClick="multiply"/>
 
     <Button
         android:text="@string/divided"
@@ -67,7 +69,8 @@
         android:layout_marginStart="20dp"
         android:layout_alignBaseline="@+id/multiplyButton"
         android:layout_alignBottom="@+id/multiplyButton"
-        android:layout_toEndOf="@+id/multiplyButton" />
+        android:layout_toEndOf="@+id/multiplyButton"
+        android:onClick="divided"/>
 
     <TextView
         android:text="@string/result"
