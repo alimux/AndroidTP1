@@ -19,7 +19,7 @@
         android:layout_alignStart="@+id/nombreA"
         android:layout_marginTop="27dp"
         android:id="@+id/nombreB"
-        android:text="@string/Entier2"
+        android:hint="@string/Entier2"
         android:textSize="20sp" />
 
     <Button
@@ -31,7 +31,8 @@
         android:layout_marginTop="15dp"
         android:layout_below="@+id/nombreB"
         android:layout_alignStart="@+id/nombreB"
-        android:layout_marginStart="20dp" />
+        android:layout_marginStart="20dp"
+        android:onClick="ajouter"/>
 
     <Button
         android:text="@string/subtract"
@@ -86,7 +87,7 @@
         android:textSize="20sp"
         android:ems="10"
         android:id="@+id/nombreA"
-        android:text="@string/Entier1"
+        android:hint="@string/Entier1"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
